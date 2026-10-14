@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drain Doctor | Concept</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0f2233;--paper:#eef3f7;--accent:#e0472b;--card:#ffffff;--muted:color-mix(in srgb,var(--ink) 62%,transparent);--line:color-mix(in srgb,var(--ink) 14%,transparent)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+  a{color:inherit}
+  .concept{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 16px;letter-spacing:.04em}
+  header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;max-width:1100px;margin:0 auto}
+  .logo{font-family:'Archivo Black',serif;font-size:24px;letter-spacing:.02em}
+  .logo span{color:var(--accent)}
+  nav a{margin-left:20px;text-decoration:none;font-weight:500;font-size:14px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:999px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{max-width:1100px;margin:0 auto;padding:56px 24px 80px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+  .hero h1{font-family:'Archivo Black',serif;font-size:clamp(44px,8vw,92px);line-height:.98;font-weight:inherit}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p{margin:24px 0 32px;font-size:18px;color:var(--muted);max-width:460px}
+  .rating{display:flex;gap:12px;align-items:center;margin-top:28px;font-size:14px;color:var(--muted)}
+  .rating b{font-family:'Archivo Black',serif;font-size:30px;color:var(--ink)}
+  .stars{color:var(--accent);letter-spacing:2px}
+  .photo{aspect-ratio:4/5;border-radius:200px 200px 16px 16px;background:linear-gradient(160deg,var(--accent),var(--ink));position:relative;overflow:hidden}
+  .photo::after{content:"Van or team photo here";position:absolute;inset:auto 0 0 0;background:rgba(0,0,0,.55);color:#fff;text-align:center;padding:12px;font-size:13px}
+  section{max-width:1100px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line)}
+  h2{font-family:'Archivo Black',serif;font-weight:inherit;font-size:40px;line-height:1.05;margin-bottom:28px}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .svc h3{font-size:17px}
+  .svc small{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+  .svc .price{font-family:'Archivo Black',serif;font-size:20px}
+  .note{font-size:12px;color:var(--muted);margin-top:14px}
+  .about,.visit{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .about p{font-size:17px;margin-bottom:14px}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  td{padding:9px 0;border-bottom:1px solid var(--line)}
+  td:last-child{text-align:right}
+  .map{border-radius:14px;min-height:280px;background:var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+  .cta{background:var(--ink);color:#fff;text-align:center;border-radius:24px;padding:64px 24px;margin:0 24px 72px}
+  @media(min-width:1100px){.cta{max-width:1052px;margin:0 auto 72px}}
+  .cta h2{color:#fff}
+  footer{text-align:center;font-size:13px;color:var(--muted);padding:0 24px 40px}
+  @media(max-width:760px){nav{display:none}.hero,.about,.visit{grid-template-columns:1fr}.photo{max-width:340px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept design by John Bardwell. Not the official Drain Doctor website.</div>
+<header>
+  <div class="logo">DRAIN DOCTOR<span>.</span></div>
+  <nav><a href="#menu">Services</a><a href="#about">About</a><a href="#visit">Visit</a></nav>
+  <a class="btn" href="tel:+64800564526">Call 0800 564 526</a>
+</header>
+<div class="hero">
+  <div>
+    <h1>Blocked drain?<br><em>Sorted.</em></h1>
+    <p>Porirua-based drain specialists covering Wellington, the Hutt Valley, Porirua and Kapiti. One call and we're on it.</p>
+    <a class="btn" href="tel:+64800564526">Call 0800 564 526</a>
+  </div>
+  <div class="photo"></div>
+</div>
+<section id="menu">
+  <h2>Services</h2>
+  <div class="services">
+<div class="svc"><div><h3>Blocked drains</h3><small>Cleared fast</small></div><span class="price"></span></div>
+<div class="svc"><div><h3>Drain repairs</h3><small>Fixed properly</small></div><span class="price"></span></div>
+<div class="svc"><div><h3>Residential</h3><small>Homes across the region</small></div><span class="price"></span></div>
+<div class="svc"><div><h3>Commercial</h3><small>Businesses and properties</small></div><span class="price"></span></div>
+  </div>
+  <p class="note">Services list to be confirmed.</p>
+</section>
+<section id="about" class="about">
+  <h2>Local crew.<br>Straight answers.</h2>
+  <div>
+<p>We're based in Porirua and work right across the Wellington region.</p>
+<p>Tell us what's going on and we'll tell you how we'll fix it.</p>
+  </div>
+</section>
+<section id="visit" class="visit">
+  <div>
+    <h2>Visit</h2>
+    <table>
+<tr><td>Areas</td><td>Wellington, Porirua</td></tr>
+<tr><td>Also</td><td>Hutt Valley, Kapiti</td></tr>
+    </table>
+    <p style="margin-top:20px">Porirua, Wellington<br><a href="tel:+64800564526">0800 564 526</a></p>
+  </div>
+  <div class="map">Google Map embed</div>
+</section>
+<div class="cta">
+  <h2>See you soon.</h2>
+  <p style="margin-bottom:28px;opacity:.8">Porirua, Wellington</p>
+  <a class="btn" href="tel:+64800564526">Call 0800 564 526</a>
+</div>
+<footer>Drain Doctor · Porirua, Wellington</footer>
+</body>
+</html>
