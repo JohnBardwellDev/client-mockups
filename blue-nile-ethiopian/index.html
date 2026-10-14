@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blue Nile Ethiopian | Concept</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1d1a33;--paper:#f6f1e7;--accent:#2a59a8;--card:#fffdf8;--muted:color-mix(in srgb,var(--ink) 62%,transparent);--line:color-mix(in srgb,var(--ink) 14%,transparent)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+  a{color:inherit}
+  .concept{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 16px;letter-spacing:.04em}
+  header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;max-width:1100px;margin:0 auto}
+  .logo{font-family:'DM Serif Display',serif;font-size:24px;letter-spacing:.02em}
+  .logo span{color:var(--accent)}
+  nav a{margin-left:20px;text-decoration:none;font-weight:500;font-size:14px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:999px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{max-width:1100px;margin:0 auto;padding:56px 24px 80px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+  .hero h1{font-family:'DM Serif Display',serif;font-size:clamp(48px,9vw,104px);line-height:.98;font-weight:inherit}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p{margin:24px 0 32px;font-size:18px;color:var(--muted);max-width:460px}
+  .rating{display:flex;gap:12px;align-items:center;margin-top:28px;font-size:14px;color:var(--muted)}
+  .rating b{font-family:'DM Serif Display',serif;font-size:30px;color:var(--ink)}
+  .stars{color:var(--accent);letter-spacing:2px}
+  .photo{aspect-ratio:4/5;border-radius:200px 200px 16px 16px;background:linear-gradient(160deg,var(--accent),var(--ink));position:relative;overflow:hidden}
+  .photo::after{content:"Food photo here";position:absolute;inset:auto 0 0 0;background:rgba(0,0,0,.55);color:#fff;text-align:center;padding:12px;font-size:13px}
+  section{max-width:1100px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line)}
+  h2{font-family:'DM Serif Display',serif;font-weight:inherit;font-size:40px;line-height:1.05;margin-bottom:28px}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .svc h3{font-size:17px}
+  .svc small{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+  .svc .price{font-family:'DM Serif Display',serif;font-size:20px}
+  .note{font-size:12px;color:var(--muted);margin-top:14px}
+  .about,.visit{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .about p{font-size:17px;margin-bottom:14px}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  td{padding:9px 0;border-bottom:1px solid var(--line)}
+  td:last-child{text-align:right}
+  .map{border-radius:14px;min-height:280px;background:var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+  .cta{background:var(--ink);color:#fff;text-align:center;border-radius:24px;padding:64px 24px;margin:0 24px 72px}
+  @media(min-width:1100px){.cta{max-width:1052px;margin:0 auto 72px}}
+  .cta h2{color:#fff}
+  footer{text-align:center;font-size:13px;color:var(--muted);padding:0 24px 40px}
+  @media(max-width:760px){nav{display:none}.hero,.about,.visit{grid-template-columns:1fr}.photo{max-width:340px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept design by John Bardwell. Not the official Blue Nile Ethiopian website.</div>
+<header>
+  <div class="logo">BLUE NILE<span>.</span></div>
+  <nav><a href="#menu">Menu favourites</a><a href="#about">About</a><a href="#visit">Visit</a></nav>
+  <a class="btn" href="tel:+64220226102">Call ahead</a>
+</header>
+<div class="hero">
+  <div>
+    <h1>Ethiopian food,<br><em>made with heart.</em></h1>
+    <p>Authentic Ethiopian cooking in Newtown. Generous platters, homemade injera and some of the best vegan food in Wellington.</p>
+    <a class="btn" href="tel:+64220226102">Call ahead</a>
+    <div class="rating"><b>5.0</b><div><span class="stars">★★★★★</span><br>66 Google reviews</div></div>
+  </div>
+  <div class="photo"></div>
+</div>
+<section id="menu">
+  <h2>Menu favourites</h2>
+  <div class="services">
+<div class="svc"><div><h3>Vegan combo</h3><small>A spread of lentils and vegetable wats</small></div><span class="price">$XX</span></div>
+<div class="svc"><div><h3>Meat dishes</h3><small>Slow cooked and richly spiced</small></div><span class="price">$XX</span></div>
+<div class="svc"><div><h3>Injera</h3><small>Soft, tangy, made in house</small></div><span class="price">$XX</span></div>
+<div class="svc"><div><h3>Takeaway</h3><small>Everything packed to go</small></div><span class="price">$XX</span></div>
+  </div>
+  <p class="note">Prices to be confirmed.</p>
+</section>
+<section id="about" class="about">
+  <h2>Share a plate,<br>Ethiopian style.</h2>
+  <div>
+<p>Every dish is cooked fresh and served on injera, the spongy flatbread you tear and scoop with.</p>
+<p>Eat in our little dining space or take it home.</p>
+  </div>
+</section>
+<section id="visit" class="visit">
+  <div>
+    <h2>Visit</h2>
+    <table>
+<tr><td>Mon to Sat</td><td>11am to 2:30pm, 4pm to 9pm</td></tr>
+<tr><td>Sunday</td><td>4pm to 9pm</td></tr>
+    </table>
+    <p style="margin-top:20px">142 Riddiford Street, Newtown<br><a href="tel:+64220226102">022 022 6102</a></p>
+  </div>
+  <div class="map">Google Map embed</div>
+</section>
+<div class="cta">
+  <h2>See you soon.</h2>
+  <p style="margin-bottom:28px;opacity:.8">142 Riddiford Street, Newtown</p>
+  <a class="btn" href="tel:+64220226102">Call ahead</a>
+</div>
+<footer>Blue Nile Ethiopian · 142 Riddiford Street, Newtown</footer>
+</body>
+</html>
